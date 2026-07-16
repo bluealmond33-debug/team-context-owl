@@ -1,0 +1,26 @@
+name: Branch audit
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Audit remote branches (read-only)
+        run: |
+          chmod +x scripts/branch-audit.sh
+          scripts/branch-audit.sh origin main | tee branch-audit.md
+      - name: Upload audit report
+        uses: actions/upload-artifact@v4
+        with:
+          name: branch-audit
+          path: branch-audit.md
