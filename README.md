@@ -22,12 +22,13 @@ AGENTS.md            # AI/사람 공통 작업 규칙
 TEAM-GUIDE.md        # Git을 몰라도 따라 할 팀원 안내
 _system/             # 현재 상태·결정·팀·규칙 — 공식 기준점
 00 Inbox/            # 아직 정리하지 않은 원본
+00 Project Hub/      # 저장소 전체 지도
 01 Meetings/         # 회의록
 02 Decisions/        # 확정된 ADR/결정
 03 Research/         # 조사와 PDF/PPT/Word의 Markdown 정리본
 04 Worklogs/         # 개인 작업 기록
 05 Tasks/            # 공식 할 일
-06 Prompts/          # AI별/역할별 프롬프트
+06 Team/             # 팀원별 담당과 AI 프롬프트
 07 Outputs/          # 기획서·데모·발표 등 산출물
 90 Archive/          # 종료된 작업
 99 Templates/        # 회의록·결정·리서치 양식

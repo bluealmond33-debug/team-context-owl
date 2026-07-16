@@ -16,5 +16,7 @@
 - 현재 상태: `_system/CURRENT_STATE.md`
 - 확정된 결정: `_system/DECISION_LOG.md`, `02 Decisions/`
 - 팀과 역할: `_system/TEAM.md`
+- 공통 용어: `_system/GLOSSARY.md`
+- 저장소 전체 지도: `00 Project Hub/README.md`
 - 원본/Markdown 처리: `_system/UPLOAD_RULES.md`
 - 파일·브랜치 규칙: `_system/PROJECT_RULES.md`, `_system/INTEGRATION_RULES.md`
