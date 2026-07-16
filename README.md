@@ -1,17 +1,28 @@
-# Context Owl 🦉
+# Context Hippo 🦛
 
-팀과 AI가 **같은 프로젝트 맥락을 읽고 쓰도록** 만드는 Obsidian + GitHub 템플릿입니다.
+팀의 흩어진 대화·회의·링크·문서를 받아, 사람과 AI가 함께 읽을 수 있는 **공유 맥락으로 소화하는** Obsidian + GitHub 템플릿입니다.
 
-- 사람은 회의, 자료, 결정, 결과물을 남깁니다.
-- AI는 이 저장소를 clone한 뒤 `000 HOME.md` → `AGENTS.md` → `_system/CURRENT_STATE.md` 순으로 읽고 작업합니다.
-- 팀원은 자기 작업 브랜치에 근거·초안·산출물을 올립니다.
-- 통합 책임자는 PR을 검토하고 `integrate/...` 브랜치에서 공식 상태·결정을 갱신합니다.
+Context Hippo는 자동으로 모든 자료를 처리하는 서비스가 아닙니다. 대신 원본을 어디에 넣고, 무엇을 Markdown으로 정리하며, 어떤 내용을 공식 결정과 현재 상태로 남길지 정합니다. 사람과 AI는 그 규칙을 함께 읽고 같은 프로젝트 맥락에서 작업합니다.
 
-## 시작
+## 작동 방식
+
+### 1. Capture — 원본을 모읍니다
+회의 전사, 링크, PDF·PPT·Word, 사진, 메모처럼 아직 정리되지 않은 것은 `00 Inbox/`에 넣습니다. 원본은 각 작업 폴더의 `_raw/`에 보관합니다.
+
+### 2. Digest — 읽을 수 있는 Markdown으로 소화합니다
+사람 또는 AI가 원본을 Markdown 노트로 정리하고, 내용의 성격에 따라 회의·리서치·작업 로그·산출물 폴더로 옮깁니다. 정리본은 항상 원본 위치를 가리킵니다.
+
+### 3. Decide — 공식 맥락을 갱신합니다
+확정된 선택은 `02 Decisions/`와 `_system/DECISION_LOG.md`에, 지금 진행 중인 일과 막힌 일은 `_system/CURRENT_STATE.md`에 남깁니다. 이 파일들이 팀의 공식 기준점입니다.
+
+### 4. Reuse — 다음 사람과 AI가 바로 이어받습니다
+새 팀원과 AI는 `000 HOME.md`부터 읽습니다. 볼트 전체를 훑지 않고도 현재 목표·결정·규칙·다음 행동을 파악한 뒤, 필요한 근거만 더 읽을 수 있습니다.
+
+## 시작하기
 
 1. 이 저장소를 **Use this template** 또는 Fork 합니다.
 2. `000 HOME.md`, `_system/TEAM.md`, `_system/CURRENT_STATE.md`의 대괄호 내용을 프로젝트에 맞게 채웁니다.
-3. 팀원은 `member/<이름>-<작업>` 브랜치에서 작업합니다.
+3. 자료는 `00 Inbox/`에, 팀원별 작업은 `member/<이름>-<작업>` 브랜치에 올립니다.
 4. 팀장/통합 책임자가 PR을 검토해 `integrate/<범위>-YYYY-MM-DD`로 모은 뒤 `main`에 반영합니다.
 
 ## 구조
@@ -20,8 +31,8 @@
 000 HOME.md          # 사람이든 AI든 시작하는 대시보드
 AGENTS.md            # AI/사람 공통 작업 규칙
 TEAM-GUIDE.md        # Git을 몰라도 따라 할 팀원 안내
-_system/             # 현재 상태·결정·팀·규칙 — 공식 기준점
-00 Inbox/            # 아직 정리하지 않은 원본
+_system/             # 현재 상태·결정·팀·용어·규칙 — 공식 기준점
+00 Inbox/            # 아직 정리하지 않은 원본과 접수 대장
 00 Project Hub/      # 저장소 전체 지도
 01 Meetings/         # 회의록
 02 Decisions/        # 확정된 ADR/결정
@@ -34,23 +45,24 @@ _system/             # 현재 상태·결정·팀·규칙 — 공식 기준점
 99 Templates/        # 회의록·결정·리서치 양식
 ```
 
+## AI에게 이렇게 요청하세요
+
+```text
+이 저장소를 읽고 현재 프로젝트 맥락을 파악해줘.
+읽는 순서는 000 HOME.md → AGENTS.md → _system/CURRENT_STATE.md →
+_system/DECISION_LOG.md → 요청과 직접 관련 있는 근거 문서야.
+
+새 자료는 원본을 보관한 채 Markdown으로 정리하고,
+확정된 내용은 결정 로그와 현재 상태에 반영할 항목을 제안해줘.
+결정되지 않은 내용은 추측하지 말고 질문으로 남겨줘.
+```
+
 ## 원본과 Markdown을 함께 보관하기
 
 PDF·PPT·Word·회의 녹음은 해당 폴더의 `_raw/`에 원본으로 보관합니다. MarkItDown 같은 도구로 추출·정리한 `.md`는 같은 폴더 바로 아래에 둡니다. 정리본 첫 줄에는 원본 경로를 적습니다.
 
 ```md
 > 원본: _raw/interview-notes.pdf
-```
-
-AI는 Markdown을 빠르게 읽고, 사람은 필요할 때 원본을 확인합니다.
-
-## AI로 프로토타입 만들기
-
-```text
-이 저장소를 읽고 현재 프로젝트 맥락을 파악해줘.
-읽는 순서는 000 HOME.md → AGENTS.md → _system/CURRENT_STATE.md → 관련 결정/리서치야.
-그 다음 현재 상태와 결정에 맞는 Claude Code 또는 Claude Design 프로토타입 프롬프트를 작성해줘.
-결정되지 않은 내용은 추측하지 말고 질문으로 남겨줘.
 ```
 
 ## 중요한 한계
