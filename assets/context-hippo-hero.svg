@@ -1,0 +1,40 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Context Hippo</title>
+  <desc id="desc">달빛 아래 연못의 물을 마시며 흐르는 문서를 바라보는 오리지널 하마 일러스트</desc>
+  <rect width="1280" height="640" rx="36" fill="#0F1720"/>
+  <circle cx="997" cy="123" r="61" fill="#F5ECD7"/>
+  <circle cx="1023" cy="103" r="61" fill="#0F1720" opacity=".42"/>
+  <circle cx="134" cy="109" r="4" fill="#E9EFFA"/><circle cx="212" cy="176" r="3" fill="#E9EFFA"/><circle cx="335" cy="91" r="5" fill="#E9EFFA"/><circle cx="460" cy="155" r="3" fill="#E9EFFA"/><circle cx="850" cy="60" r="3" fill="#E9EFFA"/><circle cx="1135" cy="215" r="4" fill="#E9EFFA"/>
+  <path d="M0 403C154 361 236 396 384 371C569 340 681 257 887 307C1036 343 1122 402 1280 348V640H0V403Z" fill="#182634"/>
+  <path d="M0 440C154 398 298 448 470 415C646 381 768 322 933 360C1088 396 1159 445 1280 400V640H0V440Z" fill="#21394B"/>
+  <path d="M0 495C183 455 355 521 519 475C671 433 806 386 975 428C1111 462 1190 500 1280 476V640H0V495Z" fill="#2D5870"/>
+  <ellipse cx="666" cy="523" rx="500" ry="96" fill="#417B91"/>
+  <ellipse cx="666" cy="519" rx="445" ry="63" fill="#4A91A7"/>
+  <path d="M413 522C487 495 572 493 645 514C718 536 797 535 878 507" stroke="#7BC5D8" stroke-width="7" stroke-linecap="round" opacity=".76"/>
+  <path d="M469 558C542 536 626 537 692 555C753 571 831 571 894 550" stroke="#7BC5D8" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+  <g transform="translate(507 176)">
+    <ellipse cx="148" cy="216" rx="157" ry="127" fill="#B9A9B6"/>
+    <ellipse cx="36" cy="94" rx="58" ry="61" fill="#A590A0"/>
+    <ellipse cx="260" cy="94" rx="58" ry="61" fill="#A590A0"/>
+    <ellipse cx="148" cy="235" rx="127" ry="99" fill="#B9A9B6"/>
+    <path d="M44 241C54 325 103 370 148 370C193 370 242 325 252 241C231 272 201 286 148 286C95 286 65 272 44 241Z" fill="#988394"/>
+    <ellipse cx="104" cy="192" rx="12" ry="16" fill="#17212B"/>
+    <ellipse cx="192" cy="192" rx="12" ry="16" fill="#17212B"/>
+    <circle cx="100" cy="188" r="3" fill="#FFF"/><circle cx="188" cy="188" r="3" fill="#FFF"/>
+    <path d="M110 232C128 246 168 246 186 232" stroke="#17212B" stroke-width="8" stroke-linecap="round"/>
+    <path d="M89 283C108 270 188 270 207 283C214 316 198 344 148 344C98 344 82 316 89 283Z" fill="#8C768A"/>
+    <ellipse cx="127" cy="297" rx="8" ry="10" fill="#17212B"/><ellipse cx="169" cy="297" rx="8" ry="10" fill="#17212B"/>
+    <path d="M93 289C96 350 116 398 148 421C180 398 200 350 203 289" stroke="#85D3E5" stroke-width="10" stroke-linecap="round"/>
+    <path d="M148 421C148 449 130 467 108 482M148 421C148 449 169 467 191 482" stroke="#85D3E5" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g opacity=".95">
+    <rect x="159" y="274" width="126" height="93" rx="12" fill="#F3EAD9" transform="rotate(-10 159 274)"/>
+    <path d="M181 298H258M181 319H246M181 340H229" stroke="#7A6B61" stroke-width="6" stroke-linecap="round"/>
+    <path d="M292 340C334 332 373 345 407 367" stroke="#8CCFE0" stroke-width="5" stroke-linecap="round" stroke-dasharray="8 12"/>
+    <rect x="959" y="282" width="126" height="93" rx="12" fill="#F3EAD9" transform="rotate(9 959 282)"/>
+    <path d="M982 306H1058M982 327H1047M982 348H1028" stroke="#7A6B61" stroke-width="6" stroke-linecap="round"/>
+    <path d="M875 371C915 352 934 344 958 339" stroke="#8CCFE0" stroke-width="5" stroke-linecap="round" stroke-dasharray="8 12"/>
+  </g>
+  <text x="640" y="91" fill="#F9F4EB" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" text-anchor="middle">Context Hippo</text>
+  <text x="640" y="130" fill="#AFC2D0" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle">팀의 흩어진 맥락을 한곳에서 천천히 소화합니다</text>
+</svg>

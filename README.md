@@ -1,5 +1,9 @@
 # Context Hippo 🦛
 
+<p align="center">
+  <img src="assets/context-hippo-hero.svg" alt="달빛 아래 연못의 물을 마시며 문서가 흐르는 모습을 바라보는 Context Hippo" width="900" />
+</p>
+
 팀의 흩어진 대화·회의·링크·문서를 받아, 사람과 AI가 함께 읽을 수 있는 **공유 맥락으로 소화하는** Obsidian + GitHub 템플릿입니다.
 
 Context Hippo는 자동으로 모든 자료를 처리하는 서비스가 아닙니다. 대신 원본을 어디에 넣고, 무엇을 Markdown으로 정리하며, 어떤 내용을 공식 결정과 현재 상태로 남길지 정합니다. 사람과 AI는 그 규칙을 함께 읽고 같은 프로젝트 맥락에서 작업합니다.
