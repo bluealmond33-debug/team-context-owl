@@ -18,6 +18,7 @@
 - Confirmed decisions: `_system/DECISION_LOG.md`, `02 Decisions/`
 - Team and roles: `_system/TEAM.md`
 - Team norms: `_system/WORKING_AGREEMENTS.md`
+- Governance (who may change what, and how it's enforced): `_system/GOVERNANCE.md`
 - Shared glossary: `_system/GLOSSARY.md`
 - Repository map: `00 Project Hub/README.md`
 - Originals / Markdown handling: `_system/UPLOAD_RULES.md`

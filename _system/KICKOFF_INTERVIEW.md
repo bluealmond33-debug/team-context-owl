@@ -19,7 +19,8 @@ When a new team adopts this template, the AI interviews the team lead for team m
 5. Never invent answers. If something is ambiguous, ask again; if undecided, leave it open.
 6. When the interview ends, update the documents per **Where answers go**, show the lead the list of changed files, and offer to commit.
 7. Finally, update the `Status:` line of this file.
-8. This interview is step 1 of `ONBOARDING.md`. On completion, point the lead to the next steps — inviting members (if step 0 was skipped) and member onboarding PRs (step 2).
+8. **Governance placeholders**: if `{{OWNER_HANDLE}}` remains in `.github/CODEOWNERS` or `.github/workflows/guard-structure.yml`, offer to replace it with the lead's/integrator's GitHub handles collected in group 2. Until replaced, CODEOWNERS is inert and guard-structure passes neutrally with a warning (see `_system/GOVERNANCE.md`).
+9. This interview is step 1 of `ONBOARDING.md`. On completion, point the lead to the next steps — inviting members (if step 0 was skipped) and member onboarding PRs (step 2).
 
 ## Question groups
 

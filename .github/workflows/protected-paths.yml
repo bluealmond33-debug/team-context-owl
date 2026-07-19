@@ -1,0 +1,25 @@
+name: Protected paths
+# Blocks protected-file edits arriving from regular member branches.
+# Role split with guard-structure.yml (see _system/GOVERNANCE.md):
+#   protected-paths = WHICH files are protected (branch-based; integrate/* passes)
+#   guard-structure = WHO may land on main   (author-based; owners pass)
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  protected-paths:
+    name: Block protected-file edits outside integration branches
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Verify protected paths
+        env:
+          GITHUB_HEAD_REF: ${{ github.head_ref }}
+        run: bash scripts/verify-protected-paths.sh "origin/${{ github.base_ref }}" HEAD

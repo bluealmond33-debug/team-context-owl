@@ -8,6 +8,7 @@
 | Confirmed choices and reasons | `_system/DECISION_LOG.md`, `02 Decisions/` |
 | Team makeup and ownership | `_system/TEAM.md`, `06 Team/` |
 | Team norms (meetings, comms, decisions) | `_system/WORKING_AGREEMENTS.md` |
+| Who may change what / enforcement | `_system/GOVERNANCE.md` |
 | Getting-started onboarding & kickoff | `ONBOARDING.md`, `_system/KICKOFF_INTERVIEW.md` |
 | Unsorted material | `00 Inbox/`, `00 Inbox/INTAKE_INDEX.md` |
 | Meeting evidence | `01 Meetings/` |
