@@ -1,13 +1,13 @@
-## 무엇을 바꿨나요?
+## What changed?
 
-## 근거/원본
+## Evidence / originals
 
-## 기존 결정과 충돌하나요?
-- [ ] 아니오
-- [ ] 예 — 관련 ADR/CURRENT_STATE와 필요한 결정:
+## Does this conflict with an existing decision?
+- [ ] No
+- [ ] Yes — related ADR/CURRENT_STATE and the decision needed:
 
-## 체크
-- [ ] 원본은 `_raw/`에 보관했다.
-- [ ] Markdown 정리본에 원본 경로를 적었다.
-- [ ] Inbox에서 분류했다면 `00 Inbox/INTAKE_INDEX.md` 상태와 최종 위치를 갱신했다.
-- [ ] 보호 파일을 바꾸지 않았다. (바꿨다면 통합 PR이다.)
+## Checklist
+- [ ] Originals are stored in `_raw/`.
+- [ ] The Markdown digest names its original's path.
+- [ ] If filing from the Inbox, `00 Inbox/INTAKE_INDEX.md` status and final location are updated.
+- [ ] No protected files changed. (If they did, this is an integration PR.)

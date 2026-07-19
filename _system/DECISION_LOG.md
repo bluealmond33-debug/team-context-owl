@@ -1,7 +1,7 @@
-# DECISION_LOG — 확정된 결정
+# DECISION_LOG — Confirmed decisions
 
-> 논의 중인 내용은 회의록·작업 브랜치에 남기고, 확정된 것만 통합 책임자가 여기에 기록합니다.
+> Ongoing discussion stays in meeting notes and work branches; only confirmed decisions land here, written by the integrator.
 
-| 날짜 | 결정 | 이유 | 근거/상세 |
+| Date | Decision | Why | Evidence/details |
 |---|---|---|---|
-| YYYY-MM-DD | [결정] | [왜] | `02 Decisions/ADR-0001-...md` |
+| YYYY-MM-DD | [decision] | [reason] | `02 Decisions/ADR-0001-...md` |

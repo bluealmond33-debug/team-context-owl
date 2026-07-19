@@ -1,73 +1,75 @@
-# KICKOFF_INTERVIEW — 프로젝트 시작 인터뷰
+# KICKOFF_INTERVIEW — Project start interview
 
-상태: 대기
+Status: pending
+Language: not set
 
-> 위 `상태:`가 `대기`인 동안, AI는 어떤 작업보다 먼저 이 인터뷰를 팀장에게 제안합니다 (`AGENTS.md`의 시작 게이트).
-> 인터뷰가 끝나면 AI가 첫 줄을 `상태: 완료 (YYYY-MM-DD)`로 바꿉니다. 다시 하려면 `대기`로 되돌립니다.
+> While `Status:` above is `pending`, the AI proposes this interview to the team lead before any other work (see the start gate in `AGENTS.md`).
+> When the interview ends, the AI changes the first line to `Status: done (YYYY-MM-DD)`. Reset it to `pending` to run it again.
 
-## 목적
+## Purpose
 
-새 팀이 이 템플릿을 쓰기 시작할 때, AI가 팀장을 인터뷰해서 팀 구성·연락처·특기·팀 규범·목표를 받아 공식 문서를 대신 채웁니다. 팀장은 대괄호 파일을 직접 편집할 필요가 없습니다.
+When a new team adopts this template, the AI interviews the team lead for team makeup, contacts, strengths, team norms, and goals, then fills the official documents. The lead never has to edit placeholder files by hand.
 
-## AI 진행 규칙
+## Rules for the AI
 
-1. 아래 5개 묶음을 **한 묶음씩** 묻습니다. 한 번에 전부 묻지 않습니다.
-2. **(필수)** 표시 항목은 반드시 받습니다. 나머지는 "건너뛰기"를 허용하고, 건너뛴 항목은 `_system/CURRENT_STATE.md`의 미해결/질문에 남깁니다.
-3. **민감 정보 규칙**: 인터뷰 시작 때 저장소 공개 여부부터 확인합니다 (`gh repo view --json visibility` 또는 팀장에게 질문). 팀 저장소는 **프라이빗이 기본**입니다 — 공개(public)로 확인되면 비공개 전환(Settings → General → Danger Zone → Change visibility)을 먼저 권합니다. 그래도 공개를 유지한다면 전화번호·개인 이메일을 커밋되는 어떤 파일에도 쓰지 않고 `_system/TEAM_CONTACTS.local.md`(gitignore됨, 팀장 로컬에만 존재)에만 기록합니다. 비공개(private)라면 팀장 선택에 따라 `_system/TEAM.md`에 적을 수 있습니다.
-4. 답을 지어내지 않습니다. 모호하면 되묻고, 결정되지 않은 것은 미해결로 남깁니다.
-5. 인터뷰가 끝나면 아래 **기록 위치**대로 문서를 갱신하고, 바꾼 파일 목록을 팀장에게 보여준 뒤 커밋을 제안합니다.
-6. 마지막으로 이 파일의 `상태:`를 갱신합니다.
-7. 이 인터뷰는 `ONBOARDING.md`의 1단계입니다. 완료하면 팀장에게 다음 단계 — 팀원 초대(0단계를 건너뛰었다면)와 팀원 온보딩 PR(2단계) — 를 안내합니다.
+1. **Ask the working language first.** Before anything else, ask which language the team works in (e.g., English, Korean). Record it in the `Language:` line above, then conduct the interview — and write all generated notes — in that language. File names, folder structure, and the `Status:` keywords stay in English.
+2. Ask the five groups below **one group at a time**. Never all at once.
+3. Items marked **(required)** must be answered. Everything else can be skipped; skipped items go to the open questions in `_system/CURRENT_STATE.md`.
+4. **Sensitive data rule**: check repository visibility at the start (`gh repo view --json visibility` or ask the lead). Team repositories default to **private** — if the repo turns out to be public, first recommend switching it to private (Settings → General → Danger Zone → Change visibility). If it stays public anyway, never write phone numbers or personal emails into any committed file; record them only in `_system/TEAM_CONTACTS.local.md` (gitignored, exists only on the lead's machine). If private, the lead may choose to keep them in `_system/TEAM.md`.
+5. Never invent answers. If something is ambiguous, ask again; if undecided, leave it open.
+6. When the interview ends, update the documents per **Where answers go**, show the lead the list of changed files, and offer to commit.
+7. Finally, update the `Status:` line of this file.
+8. This interview is step 1 of `ONBOARDING.md`. On completion, point the lead to the next steps — inviting members (if step 0 was skipped) and member onboarding PRs (step 2).
 
-## 질문 묶음
+## Question groups
 
-### 1) 프로젝트와 목표 (필수)
-- 프로젝트 이름과 한 줄 정의 — 누구의 어떤 문제를 푸는가
-- 이 프로젝트로 이루고 싶은 것 — 팀 공동 목표 (예: 수상, 학점, 포트폴리오, 실사용자)
-- 성공의 정의 — 마감일에 무엇이 있으면 성공했다고 볼 것인가
-- 최종 마감일과 중간 마일스톤 (발표일·제출일 등)
+### 1) Project and goals (required)
+- Project name and one-line definition — whose problem does it solve
+- What the team wants out of this project — the shared goal (e.g., award, grade, portfolio, real users)
+- Definition of success — what must exist on deadline day to call it a success
+- Final deadline and intermediate milestones (presentation and submission dates)
 
-### 2) 팀 구성 (필수: 인원수와 각자의 이름/별칭)
-- 팀 인원수, 각 팀원의 이름 또는 별칭
-- 팀장과 통합 책임자는 누구인가
-- 저장소는 공개인가 비공개인가 (민감 정보 저장 위치가 달라짐)
+### 2) Team makeup (required: headcount and each member's name/alias)
+- Number of members, each member's name or alias
+- Who is the lead, who is the integrator
+- Is the repository private or public (this changes where sensitive data goes)
 
-### 3) 연락처 (팀원별)
-- GitHub ID (협업에 필요 — 권장)
-- 팀이 쓰는 채널의 주소/핸들: Discord, Slack, Gmail, Figma, 전화번호(민감) 등
-- 주 연락 채널 하나와, 급할 때 쓰는 채널
-- 메시지 응답 기대 시간 (예: 24시간 안)
+### 3) Contacts (per member)
+- GitHub ID (needed for collaboration — recommended)
+- Handles for whatever the team uses: Discord, Slack, Gmail, Figma, phone (sensitive), etc.
+- One primary channel, plus the channel for urgent matters
+- Expected response time (e.g., within 24 hours)
 
-### 4) 특기·역할·가용 시간 (팀원별)
-- 잘하는 것/장점 (예: 발표, 디자인, 데이터 분석, 글쓰기, 코드)
-- 맡고 싶은 역할과 이 프로젝트에서 배우고 싶은 것
-- 주당 투입 가능 시간과 안 되는 시간대 (시험 기간 등 일정 리스크 포함)
-- Git/GitHub 익숙한 정도 (`TEAM-GUIDE.md` 안내가 필요한 사람 파악)
+### 4) Strengths, roles, availability (per member)
+- What they're good at (e.g., presenting, design, data analysis, writing, code)
+- The role they want, and what they want to learn from this project
+- Weekly hours available and hard-blocked time slots (including schedule risks like exam periods)
+- Git/GitHub familiarity (identifies who needs `TEAM-GUIDE.md`)
 
-### 5) 팀 규범 — 지켜줬으면 하는 점
-- 회의: 주기, 요일/시간대, 지각·불참 규칙
-- 마감을 못 지킬 것 같을 때 언제까지 누구에게 알리는가
-- 의사결정 방식 (합의 / 다수결 / 팀장 결정)과 동률일 때 타이브레이커
-- 갈등·무임승차가 생겼을 때 처리 원칙
-- 그 외 서로 부탁하고 싶은 것 (자유)
+### 5) Team norms — what we ask of each other
+- Meetings: cadence, day/time, rules for lateness and absence
+- When someone can't make a deadline: by when, and whom, must they tell
+- Decision-making style (consensus / majority / lead decides) and the tie-breaker
+- How conflict or free-riding is handled
+- Anything else members want from each other (open)
 
-## 기록 위치
+## Where answers go
 
-| 받은 정보 | 기록할 파일 |
+| Collected | Written to |
 |---|---|
-| 프로젝트 이름·한 줄 정의·현재 단계 | `000 HOME.md`, `_system/CURRENT_STATE.md` |
-| 목표·성공 정의·마일스톤 | `000 HOME.md`, `_system/CURRENT_STATE.md` (마일스톤은 다음 할 일로) |
-| 팀원·역할·통합 권한·공개 가능한 핸들 | `_system/TEAM.md` |
-| 팀원별 특기·가용 시간·개인 목표 | `06 Team/<별칭>.md` (`99 Templates/member.md` 양식 사용) |
-| 팀 규범 | `_system/WORKING_AGREEMENTS.md` |
-| 전화번호·개인 이메일 등 민감 연락처 | `_system/TEAM_CONTACTS.local.md` — **커밋 금지**, 팀장 로컬 보관 |
+| Project name, one-line definition, phase | `000 HOME.md`, `_system/CURRENT_STATE.md` |
+| Goals, definition of success, milestones | `000 HOME.md`, `_system/CURRENT_STATE.md` (milestones as next tasks) |
+| Members, roles, integration rights, public handles | `_system/TEAM.md` |
+| Per-member strengths, availability, personal goals | `06 Team/<alias>.md` (use `99 Templates/member.md`) |
+| Team norms | `_system/WORKING_AGREEMENTS.md` |
+| Sensitive contacts (phone, personal email) | `_system/TEAM_CONTACTS.local.md` — **never committed**, lead's machine only |
 
-## TEAM_CONTACTS.local.md 양식 (gitignore됨 — 커밋되지 않음)
+## TEAM_CONTACTS.local.md format (gitignored — never committed)
 
 ```md
-# TEAM_CONTACTS (local only — git에 올리지 않음)
+# TEAM_CONTACTS (local only — never pushed to git)
 
-| 이름 | 전화 | 이메일 | 비고 |
+| Name | Phone | Email | Notes |
 |---|---|---|---|
-| [이름] | [번호] | [주소] | - |
+| [name] | [number] | [address] | - |
 ```

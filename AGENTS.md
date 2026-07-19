@@ -1,23 +1,26 @@
-# AGENTS.md — 사람과 AI의 공통 규칙
+# AGENTS.md — Shared rules for humans and AI
 
-## 시작 게이트 — 킥오프 인터뷰
-`_system/KICKOFF_INTERVIEW.md`의 첫 줄 `상태:`가 `대기`이면, 다른 요청을 처리하기 전에 팀장에게 킥오프 인터뷰를 제안하고 그 파일의 진행 규칙대로 실행한다. 완료하면 그 파일의 상태를 `완료 (YYYY-MM-DD)`로 바꾼다. 팀장이 미루면 강요하지 않되, 새 세션에서 한 번씩만 다시 안내한다.
+## Start gate — kickoff interview
+If the `Status:` line at the top of `_system/KICKOFF_INTERVIEW.md` says `pending`, propose the kickoff interview to the team lead before handling any other request, and run it by that file's rules. When finished, set the status to `done (YYYY-MM-DD)`. If the lead defers, don't push — remind once per new session.
 
-## 반드시 먼저 읽을 것
+## Working language
+The template ships in English. The kickoff interview asks for the team's working language and records it in `_system/KICKOFF_INTERVIEW.md`. Hold all conversation and write all generated notes and summaries in that language; keep file names, folder structure, and status keywords (`pending` / `done`) in English.
+
+## Read these first
 1. `000 HOME.md`
 2. `_system/CURRENT_STATE.md`
 3. `_system/DECISION_LOG.md`
-4. 요청과 직접 관련 있는 폴더의 문서
+4. Documents in the folders directly relevant to the request
 
-## 작업 규칙
-- 확인되지 않은 사실·결정·수치를 지어내지 않는다. 모르면 `_system/CURRENT_STATE.md`의 미해결 항목 또는 질문으로 남긴다.
-- PDF·PPT·Word·녹음 원본을 지우지 않는다. `_raw/`에 원본을 보관하고, 읽기 쉬운 Markdown 정리본을 같은 폴더에 둔다.
-- 작업 전후에 자신의 작업 기록을 `04 Worklogs/`에 남긴다.
-- 팀원 브랜치에서는 근거·초안·산출물만 다룬다. `_system/`, `02 Decisions/`, `05 Tasks/`, 최상위 안내 파일은 통합 책임자만 바꾼다.
-- AI가 만든 글·코드·요약은 출처와 가정을 함께 적고 사람이 검토할 수 있게 둔다.
+## Working rules
+- Never invent unverified facts, decisions, or numbers. If unsure, leave it as an open item or question in `_system/CURRENT_STATE.md`.
+- Never delete PDF/PPT/Word/recording originals. Keep originals in `_raw/` and put a readable Markdown digest in the same folder.
+- Log your own work in `04 Worklogs/` before and after working.
+- Member branches touch only evidence, drafts, and outputs. Only the integrator changes `_system/`, `02 Decisions/`, `05 Tasks/`, and the top-level guide files.
+- Anything AI produces — text, code, summaries — ships with its sources and assumptions, left for a human to review.
 
-## AI 프로토타입 작업
-AI에게 구현을 맡길 때는 이 저장소를 먼저 읽게 한 뒤, 현재 목표·결정·제약을 근거로 Claude Code/Claude Design용 프롬프트를 작성하거나 구현한다.
+## AI prototype work
+When handing implementation to AI, have it read this repository first, then write or implement Claude Code / Claude Design prompts grounded in the current goal, decisions, and constraints.
 
-## 우선순위
-사람의 직접 지시 > 이 파일의 공통 규칙 > AI 기본 동작
+## Priority
+Direct human instructions > shared rules in this file > AI defaults

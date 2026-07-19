@@ -1,21 +1,21 @@
-# CURRENT_STATE — 현재 상태
+# CURRENT_STATE — Where things stand
 
-> 통합 책임자만, 근거가 확인된 내용으로 갱신합니다. 한 화면 안에 유지합니다.
+> Only the integrator updates this, with verified content. Keep it within one screen.
 
-## 목표
-- **프로젝트:** [이름]
-- **한 줄 정의:** [누구의 어떤 문제를 어떻게 푸는가]
+## Goal
+- **Project:** [name]
+- **One-line definition:** [whose problem, solved how]
 
-## 현재 단계
-- [지금 어디까지 왔는가]
+## Current phase
+- [how far we've come]
 
-## 다음 할 일 (Top 3)
-1. [가장 중요한 다음 행동]
-2. [두 번째 행동]
-3. [세 번째 행동]
+## Next tasks (top 3)
+1. [most important next action]
+2. [second action]
+3. [third action]
 
-## 미해결 / 질문
-- [결정이 필요한 항목]
+## Open / questions
+- [items that need a decision]
 
-## 최근 확정
-- [날짜] [결정 요약] → `02 Decisions/ADR-0001-...md`
+## Recently confirmed
+- [date] [decision summary] → `02 Decisions/ADR-0001-...md`

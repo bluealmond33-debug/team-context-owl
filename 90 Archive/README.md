@@ -1,3 +1,3 @@
 # Archive
 
-종료되었거나 더 이상 현재 맥락에 필요하지 않은 자료를 보관합니다.
+Closed work and material no longer part of the active context.

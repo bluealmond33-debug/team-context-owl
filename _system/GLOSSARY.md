@@ -1,12 +1,12 @@
-# GLOSSARY — 공통 용어
+# GLOSSARY — Shared terms
 
-> 제품·데이터·업무 용어를 같은 뜻으로 사용하기 위한 기준입니다. 새 용어가 팀의 판단이나 구현에 영향을 주면 여기에 먼저 정의합니다.
+> The baseline for using product, data, and domain terms to mean the same thing. If a new term affects the team's judgment or implementation, define it here first.
 
-| 용어 | 정의 | 참고 |
+| Term | Definition | Reference |
 |---|---|---|
-| [용어] | [팀이 합의한 뜻] | [관련 결정/문서 링크] |
+| [term] | [the meaning the team agreed on] | [related decision/document link] |
 
-## 작성 규칙
-- 일상어라도 프로젝트 안에서 다른 뜻으로 쓰이면 기록합니다.
-- 정의를 바꾸면 `DECISION_LOG.md`에 이유와 날짜를 남깁니다.
-- 외부 약어·지표는 원문 출처 또는 계산식을 함께 적습니다.
+## Rules
+- Record even everyday words if the project uses them with a different meaning.
+- When a definition changes, log the reason and date in `DECISION_LOG.md`.
+- For external acronyms and metrics, include the original source or the formula.
