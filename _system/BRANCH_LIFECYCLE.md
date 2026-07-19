@@ -16,14 +16,14 @@
 
 ## 개인 브랜치 재사용
 
-`member/<이름>`을 계속 쓰고 싶다면 PR이 main에 머지된 뒤에만 아래를 실행합니다.
+같은 작업 브랜치(`member/<이름>-<작업>`)를 다음 작업에도 계속 쓰고 싶다면 PR이 main에 머지된 뒤에만 아래를 실행합니다.
 
 ```bash
 git fetch origin
-git switch member/<이름>
+git switch member/<이름>-<작업>
 git status --short  # 반드시 비어 있어야 함
 git reset --hard origin/main
-git push --force-with-lease origin member/<이름>
+git push --force-with-lease origin member/<이름>-<작업>
 ```
 
 - 이름은 유지하고 내용만 main과 같게 만듭니다.
@@ -32,4 +32,4 @@ git push --force-with-lease origin member/<이름>
 
 ## 자동화 범위
 
-`.github/workflows/branch-audit.yml`은 정기적으로 **읽기 전용 감사 보고서**를 만듭니다. 자동 삭제·자동 reset은 하지 않습니다. 고유 작업을 지우는 자동화는 위험하며, 담당자와 팀장의 명시적 결정이 필요합니다.
+`.github/workflows/branch-audit.yml`은 매주 **읽기 전용 감사 보고서**를 만듭니다. 브랜치별 ahead/behind와 마지막 커밋 경과일을 계산해 위 표의 stale(14일) 후보까지 표시하고, 결과를 저장소의 "Branch audit report" 이슈에 올립니다. 자동 삭제·자동 reset은 하지 않습니다. 고유 작업을 지우는 자동화는 위험하며, 담당자와 팀장의 명시적 결정이 필요합니다.

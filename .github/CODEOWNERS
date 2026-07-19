@@ -1,0 +1,17 @@
+# CODEOWNERS — 보호 파일 규칙의 실제 강제 장치
+#
+# 사용법:
+# 1. 아래 @integrator-id 를 통합 책임자(또는 팀장)의 GitHub ID로 바꿉니다.
+# 2. 각 줄 앞의 주석(#)을 지웁니다.
+# 3. GitHub Settings > Branches 에서 main 보호 규칙을 만들고
+#    "Require review from Code Owners"를 켭니다.
+# 이 세 가지가 모두 되어야 INTEGRATION_RULES.md의 보호 파일 규칙이 실제로 강제됩니다.
+#
+# /000\ HOME.md       @integrator-id
+# /AGENTS.md          @integrator-id
+# /CLAUDE.md          @integrator-id
+# /TEAM-GUIDE.md      @integrator-id
+# /_system/           @integrator-id
+# /02\ Decisions/     @integrator-id
+# /05\ Tasks/         @integrator-id
+# /.github/           @integrator-id
