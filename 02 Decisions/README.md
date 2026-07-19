@@ -1,3 +1,3 @@
 # Decisions
 
-공식 결정은 ADR 형식으로 보관합니다. 통합 책임자만 추가·수정합니다.
+Official decisions are kept in ADR form. Only the integrator adds or edits them.

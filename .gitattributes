@@ -1,8 +1,8 @@
 * text=auto
 
-# 큰 원본(발표 자료·녹음·영상)을 Git LFS로 관리하기로 했다면:
-# 1) 각자 `git lfs install` 실행
-# 2) 아래 주석을 해제 (자세한 기준은 _system/UPLOAD_RULES.md)
+# To manage large originals (decks, recordings, video) with Git LFS:
+# 1) everyone runs `git lfs install`
+# 2) uncomment the lines below (see _system/UPLOAD_RULES.md for criteria)
 #*.pdf  filter=lfs diff=lfs merge=lfs -text
 #*.pptx filter=lfs diff=lfs merge=lfs -text
 #*.docx filter=lfs diff=lfs merge=lfs -text

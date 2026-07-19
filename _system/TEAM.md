@@ -1,19 +1,19 @@
-# TEAM — 역할과 연락 기준
+# TEAM — Roles and how to reach people
 
-> 공개 저장소에는 실명·전화번호·개인 연락처를 넣지 않습니다.
+> Public repositories get no real names, phone numbers, or personal contact details.
 
-| 역할 | GitHub ID/별칭 | 담당 | 통합 권한 |
+| Role | GitHub ID/alias | Owns | Integration rights |
 |---|---|---|---|
-| 팀장 | [id] | 최종 승인 | main 승인 |
-| 통합 책임자 | [id] | PR 검토·공식 상태/결정 갱신 | integrate/main PR |
-| 팀원 | [id] | 자료·리서치·산출물 | 작업 브랜치 |
+| Lead | [id] | final approval | approves `main` |
+| Integrator | [id] | PR review, official state/decision updates | integrate/main PRs |
+| Member | [id] | material, research, outputs | work branches |
 
-## 연락 핸들 (공개해도 되는 범위만)
+## Contact handles (public-safe only)
 
-| 별칭 | GitHub | Discord | Slack | Figma | 주 채널 / 응답 기대 |
+| Alias | GitHub | Discord | Slack | Figma | Primary channel / response time |
 |---|---|---|---|---|---|
-| [별칭] | [id] | - | - | - | [채널 / 24시간 안] |
+| [alias] | [id] | - | - | - | [channel / within 24h] |
 
-- 전화번호·개인 이메일은 공개 저장소에 커밋하지 않습니다. 팀장이 `_system/TEAM_CONTACTS.local.md`(gitignore됨)에 보관합니다. 비공개 저장소라면 팀 합의로 이 표에 컬럼을 추가할 수 있습니다.
-- 팀원별 특기·가용 시간·개인 목표는 `06 Team/<별칭>.md`에 있습니다.
-- 이 파일은 킥오프 인터뷰(`_system/KICKOFF_INTERVIEW.md`)가 채웁니다.
+- Phone numbers and personal emails are never committed to a public repository. The lead keeps them in `_system/TEAM_CONTACTS.local.md` (gitignored). In a private repository, the team may agree to add columns here instead.
+- Per-member strengths, availability, and personal goals live in `06 Team/<alias>.md`.
+- This file is filled by the kickoff interview (`_system/KICKOFF_INTERVIEW.md`).

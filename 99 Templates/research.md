@@ -1,11 +1,11 @@
-# YYYY-MM-DD 리서치 제목
+# YYYY-MM-DD Research title
 
-> 원본: _raw/원본파일.pdf 또는 URL
+> Origin: _raw/original-file.pdf or URL
 
-## 질문
+## Question
 
-## 사실/근거
+## Facts / evidence
 
-## 해석
+## Interpretation
 
-## 프로젝트에 주는 영향
+## Impact on the project

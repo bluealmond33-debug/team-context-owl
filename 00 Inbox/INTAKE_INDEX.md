@@ -1,21 +1,21 @@
-# INTAKE_INDEX — Inbox 처리 대장
+# INTAKE_INDEX — Inbox ledger
 
-> `00 Inbox/`는 임시 쓰레기통이 아닙니다. **분류 대기열**입니다. 항목이 이동되어도 Git 이력과 원본은 남습니다.
+> `00 Inbox/` is not a temporary trash can. It is a **triage queue**. Even after items move on, Git history and the originals remain.
 
-| 접수일 | 항목 | 상태 | 원본 경로 | 정리본/이동 위치 | 담당 | 비고 |
+| Received | Item | Status | Original path | Digest/destination | Owner | Notes |
 |---|---|---|---|---|---|---|
-| YYYY-MM-DD | [자료 이름] | untriaged | `_raw/...` | - | [id] | - |
+| YYYY-MM-DD | [item name] | untriaged | `_raw/...` | - | [id] | - |
 
-## 상태
+## Statuses
 
-- `untriaged`: 아직 분류하지 않음
-- `classified`: `01~07` 폴더로 `git mv` 완료. 이 행에 최종 위치를 적음
-- `hold`: 보류. 이유와 다음 검토일을 비고에 적음
-- `archived`: 더 이상 활성 맥락은 아니지만 `90 Archive/`에 보관
+- `untriaged`: not yet sorted
+- `classified`: moved to a `01–07` folder with `git mv`; the row records the final location
+- `hold`: parked; the reason and next review date go in Notes
+- `archived`: no longer active context, kept in `90 Archive/`
 
-## 처리 원칙
+## Principles
 
-1. 자료를 받으면 원본을 먼저 `00 Inbox/_raw/`에 넣고 이 대장에 한 줄을 추가합니다.
-2. 분류할 때는 삭제 대신 `git mv`로 목적 폴더 또는 그 폴더의 `_raw/`로 이동합니다.
-3. PDF·PPT·Word·녹음은 원본을 옮긴 뒤 Markdown 정리본을 같은 목적 폴더에 추가합니다.
-4. `00 Inbox/`의 활성 목록이 비는 것은 **처리 완료**를 뜻할 뿐, 자료가 사라졌다는 뜻이 아닙니다.
+1. When material arrives, put the original in `00 Inbox/_raw/` first and add a row here.
+2. File by moving with `git mv` to the destination folder (or its `_raw/`) — never by deleting.
+3. For PDF/PPT/Word/recordings, move the original first, then add a Markdown digest in the same destination folder.
+4. An empty active list in `00 Inbox/` means **processing is done** — not that material disappeared.

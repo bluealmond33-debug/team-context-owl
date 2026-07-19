@@ -1,12 +1,12 @@
-# ADR-NNNN — 결정 제목
+# ADR-NNNN — Decision title
 
-- 날짜:
-- 상태: 제안 | 확정 | 대체됨
+- Date:
+- Status: proposed | confirmed | superseded
 
-## 맥락
+## Context
 
-## 결정
+## Decision
 
-## 이유와 근거
+## Rationale and evidence
 
-## 영향
+## Consequences

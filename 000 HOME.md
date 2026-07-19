@@ -1,24 +1,24 @@
-# 000 HOME — 프로젝트 대시보드
+# 000 HOME — Project dashboard
 
-> 새 팀원과 AI는 **이 파일부터** 읽습니다. 다음으로 `AGENTS.md`, `_system/CURRENT_STATE.md`, `_system/DECISION_LOG.md`를 읽습니다.
+> New teammates and AI read **this file first**, then `AGENTS.md`, `_system/CURRENT_STATE.md`, and `_system/DECISION_LOG.md`.
 
-## 한 줄 목표
-- **프로젝트:** [프로젝트 이름]
-- **문제:** [누구의 어떤 문제를 푸는가]
-- **현재 단계:** [리서치 / 기획 / 제작 / 검증 / 발표]
+## One-line goal
+- **Project:** [project name]
+- **Problem:** [whose problem, and what is it]
+- **Current phase:** [research / planning / building / validating / presenting]
 
-## 지금 가장 중요한 것
-1. [이번 주 우선순위]
-2. [막힌 일]
-3. [다음 마감]
+## What matters most right now
+1. [this week's priority]
+2. [what's blocked]
+3. [next deadline]
 
-## 읽는 지도
-- 처음 시작(온보딩·킥오프): `ONBOARDING.md`, `_system/KICKOFF_INTERVIEW.md`
-- 현재 상태: `_system/CURRENT_STATE.md`
-- 확정된 결정: `_system/DECISION_LOG.md`, `02 Decisions/`
-- 팀과 역할: `_system/TEAM.md`
-- 팀 규범: `_system/WORKING_AGREEMENTS.md`
-- 공통 용어: `_system/GLOSSARY.md`
-- 저장소 전체 지도: `00 Project Hub/README.md`
-- 원본/Markdown 처리: `_system/UPLOAD_RULES.md`
-- 파일·브랜치 규칙: `_system/PROJECT_RULES.md`, `_system/INTEGRATION_RULES.md`
+## Reading map
+- Getting started (onboarding & kickoff): `ONBOARDING.md`, `_system/KICKOFF_INTERVIEW.md`
+- Current state: `_system/CURRENT_STATE.md`
+- Confirmed decisions: `_system/DECISION_LOG.md`, `02 Decisions/`
+- Team and roles: `_system/TEAM.md`
+- Team norms: `_system/WORKING_AGREEMENTS.md`
+- Shared glossary: `_system/GLOSSARY.md`
+- Repository map: `00 Project Hub/README.md`
+- Originals / Markdown handling: `_system/UPLOAD_RULES.md`
+- File and branch rules: `_system/PROJECT_RULES.md`, `_system/INTEGRATION_RULES.md`

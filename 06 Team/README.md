@@ -1,9 +1,9 @@
-# 06 Team — 팀원별 담당과 AI 프롬프트
+# 06 Team — Per-member ownership and AI prompts
 
-팀원별 담당 범위, 작업 방식, 그리고 각자가 사용하는 AI 프롬프트를 둡니다.
+Each member's scope, working style, and the AI prompts they use.
 
-- 개인 파일: `06 Team/<별칭>.md`
-- 공통 규칙: 루트의 `AGENTS.md`
-- 공식 역할·권한: `_system/TEAM.md`
+- Personal file: `06 Team/<alias>.md`
+- Shared rules: `AGENTS.md` at the root
+- Official roles and rights: `_system/TEAM.md`
 
-개인 프롬프트는 공통 규칙을 복제하지 말고, 담당 업무와 필요한 맥락만 추가합니다.
+Personal prompts add only member-specific duties and context — don't duplicate the shared rules.

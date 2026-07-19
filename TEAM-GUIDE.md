@@ -1,21 +1,21 @@
-# TEAM GUIDE — Git을 몰라도 쓰는 법
+# TEAM GUIDE — Using this without knowing Git
 
-> 팀에 처음 합류했나요? `ONBOARDING.md`의 **2단계 — 팀원 합류** 순서대로 하면 됩니다. 이 문서는 그 뒤에도 계속 쓰는 일상 사용법입니다.
+> Just joined? Follow **step 2 — Members join** in `ONBOARDING.md`. This document is the everyday manual you keep using afterwards.
 
-## 자료를 넣을 때
-- 링크·사진·PDF·PPT·회의 전사처럼 아직 정리 안 된 것은 `00 Inbox/`에 넣습니다.
-- AI에게 “이 자료 원본은 보관하고 Markdown으로 정리해줘”라고 요청합니다.
+## Adding material
+- Anything unsorted — links, photos, PDFs, PPTs, meeting transcripts — goes into `00 Inbox/`.
+- Ask the AI: "Keep the original and digest this into Markdown."
 
-## 내 작업을 올릴 때
-1. `member/<이름>-<작업>` 브랜치를 만듭니다.
-2. 회의록은 `01 Meetings/`, 리서치는 `03 Research/`, 개인 메모는 `04 Worklogs/`, 결과물은 `07 Outputs/`에 둡니다.
-3. 커밋 메시지에 무엇을 했고 원본이 어디인지 적습니다.
-4. PR을 열어 통합 책임자에게 검토를 요청합니다.
+## Publishing your work
+1. Create a `member/<name>-<task>` branch.
+2. Meeting notes go to `01 Meetings/`, research to `03 Research/`, personal notes to `04 Worklogs/`, deliverables to `07 Outputs/`.
+3. Write commit messages that say what you did and where the original lives.
+4. Open a PR and request review from the integrator.
 
-## 직접 고치면 안 되는 파일
-`000 HOME.md`, `AGENTS.md`, `TEAM-GUIDE.md`, `_system/`, `02 Decisions/`, `05 Tasks/`는 팀의 공식 기준입니다. 변경이 필요하면 PR에 이유를 적고 통합 요청을 합니다.
+## Files you must not edit directly
+`000 HOME.md`, `AGENTS.md`, `CLAUDE.md`, `ONBOARDING.md`, `TEAM-GUIDE.md`, `_system/`, `02 Decisions/`, `05 Tasks/` are the team's official baseline. If a change is needed, explain why in a PR and request integration.
 
-## AI에게 물어볼 수 있는 것
-- “지금까지 무엇을 했어?” → `CURRENT_STATE`, 최근 회의록, 작업 로그를 근거로 답합니다.
-- “왜 이 방향으로 갔어?” → 결정 로그와 ADR을 근거로 답합니다.
-- “Claude Design으로 이 프로토타입을 만들 프롬프트를 써줘.” → 현재 상태와 결정을 먼저 읽게 합니다.
+## What you can ask the AI
+- "What has been done so far?" → answers from `CURRENT_STATE`, recent meeting notes, and worklogs.
+- "Why did we go this direction?" → answers from the decision log and ADRs.
+- "Write a Claude Design prompt for this prototype." → it reads current state and decisions first.

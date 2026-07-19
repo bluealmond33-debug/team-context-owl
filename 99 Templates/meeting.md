@@ -1,12 +1,12 @@
-# YYYY-MM-DD 회의 제목
+# YYYY-MM-DD Meeting title
 
-- 일시:
-- 참석:
-- 원본/녹음:
+- When:
+- Attendees:
+- Original/recording:
 
-## 논의
+## Discussion
 
-## 결정 후보 (아직 확정 아님)
+## Decision candidates (not confirmed yet)
 
-## 다음 행동
-- [ ] 담당자 — 할 일
+## Next actions
+- [ ] owner — task

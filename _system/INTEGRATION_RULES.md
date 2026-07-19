@@ -1,19 +1,19 @@
-# INTEGRATION_RULES — 브랜치와 PR
+# INTEGRATION_RULES — Branches and PRs
 
-| 구분 | 이름 | 할 수 있는 일 | 할 수 없는 일 |
+| Kind | Name | Can do | Cannot do |
 |---|---|---|---|
-| 팀원 작업 브랜치 | `member/<이름>-<작업>` | 원본·회의록·리서치·작업로그·산출물 | 공식 상태/결정/우선순위 변경 |
-| 통합 브랜치 | `integrate/<범위>-YYYY-MM-DD` | 여러 PR 통합, 보호 파일 갱신, 충돌 해소 | 팀장 승인 없이 main 머지 |
-| `main` | 공식 기준선 | 검토 완료 PR 반영 | 직접 작업/직접 push |
+| Member work branch | `member/<name>-<task>` | originals, meeting notes, research, worklogs, outputs | change official state/decisions/priorities |
+| Integration branch | `integrate/<scope>-YYYY-MM-DD` | combine PRs, update protected files, resolve conflicts | merge to main without lead approval |
+| `main` | official baseline | receive reviewed PRs | direct work / direct pushes |
 
-## 보호 파일
-`000 HOME.md`, `AGENTS.md`, `TEAM-GUIDE.md`, `_system/**`, `02 Decisions/**`, `05 Tasks/**`, `.github/**`는 통합 책임자만 변경합니다.
+## Protected files
+`000 HOME.md`, `AGENTS.md`, `CLAUDE.md`, `ONBOARDING.md`, `TEAM-GUIDE.md`, `_system/**`, `02 Decisions/**`, `05 Tasks/**`, `.github/**` are changed only by the integrator.
 
-## 절차
-1. 팀원은 작업 브랜치에서 근거와 초안을 커밋합니다.
-2. PR에 범위·출처·기존 결정과의 충돌 여부를 적습니다.
-3. 통합 책임자가 검토하고 필요하면 질문합니다.
-4. `integrate/...`에서 `CURRENT_STATE`, `DECISION_LOG`, ADR, 공식 태스크를 함께 갱신합니다.
-5. 팀장이 최종 PR을 승인해 `main`에 반영합니다.
+## Procedure
+1. Members commit evidence and drafts on their work branches.
+2. The PR states its scope, sources, and whether it conflicts with existing decisions.
+3. The integrator reviews and asks questions where needed.
+4. On `integrate/...`, update `CURRENT_STATE`, `DECISION_LOG`, ADRs, and official tasks together.
+5. The lead approves the final PR into `main`.
 
-> GitHub Settings에서 main branch protection과 required reviews를 켜야 실제 권한 제어가 됩니다.
+> Enable main branch protection and required reviews in GitHub Settings to make this real access control.

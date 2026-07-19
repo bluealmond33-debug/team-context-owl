@@ -1,21 +1,21 @@
-# [별칭] — 팀원 프로필
+# [alias] — Member profile
 
 - GitHub: [id]
-- 주 연락 채널: [Discord/Slack/...] (급할 때: [채널])
-- 응답 기대: [예: 24시간 안]
+- Primary channel: [Discord/Slack/...] (urgent: [channel])
+- Response time: [e.g., within 24 hours]
 
-## 잘하는 것 / 장점
-- [예: 발표, 디자인, 데이터 분석]
+## Strengths
+- [e.g., presenting, design, data analysis]
 
-## 맡은 역할
-- [담당 범위]
+## Role
+- [scope]
 
-## 배우고 싶은 것 (개인 목표)
-- [이 프로젝트에서 얻고 싶은 것]
+## Wants to learn (personal goal)
+- [what they want out of this project]
 
-## 가용 시간
-- 주당 약 [N]시간
-- 안 되는 시간대: [예: 화·목 저녁, 중간고사 기간]
+## Availability
+- ~[N] hours per week
+- Blocked slots: [e.g., Tue/Thu evenings, midterm weeks]
 
-## 작업 방식 메모
-- [예: 밤에 집중이 잘 됨, 텍스트보다 그림으로 소통 선호]
+## Working-style notes
+- [e.g., focuses best at night, prefers diagrams over text]

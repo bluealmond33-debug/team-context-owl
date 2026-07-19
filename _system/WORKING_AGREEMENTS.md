@@ -1,22 +1,22 @@
-# WORKING_AGREEMENTS — 팀 규범
+# WORKING_AGREEMENTS — Team norms
 
-> 킥오프 인터뷰에서 합의한 팀의 약속입니다. 바꾸면 `DECISION_LOG.md`에 날짜와 이유를 남깁니다.
+> The commitments agreed in the kickoff interview. Changes get a date and reason in `DECISION_LOG.md`.
 
-## 회의
-- 주기/시간대: [예: 매주 화 21:00, 30분]
-- 지각·불참: [예: 2시간 전까지 팀 채널에 공유]
+## Meetings
+- Cadence/time: [e.g., every Tue 21:00, 30 min]
+- Lateness/absence: [e.g., post in the team channel at least 2 hours ahead]
 
-## 커뮤니케이션
-- 주 채널: [예: Discord] / 급할 때: [예: 전화]
-- 응답 기대 시간: [예: 24시간 안]
-- 마감을 못 지킬 것 같으면: [예: 마감 48시간 전까지 팀장에게 먼저 알림]
+## Communication
+- Primary channel: [e.g., Discord] / urgent: [e.g., phone]
+- Expected response time: [e.g., within 24 hours]
+- If a deadline looks at risk: [e.g., tell the lead at least 48 hours before]
 
-## 의사결정
-- 방식: [합의 / 다수결 / 팀장 결정]
-- 동률·교착일 때: [예: 팀장이 결정하고 `DECISION_LOG.md`에 기록]
+## Decision-making
+- Style: [consensus / majority / lead decides]
+- On ties or deadlock: [e.g., the lead decides and logs it in `DECISION_LOG.md`]
 
-## 갈등·무임승차
-- [예: 1차는 당사자 간 대화, 2차는 회의 안건으로, 논의는 회의록에 기록]
+## Conflict and free-riding
+- [e.g., first a direct conversation, then a meeting agenda item; the discussion is recorded in meeting notes]
 
-## 서로 지켜줬으면 하는 점
-- [자유 항목 — 킥오프 인터뷰 5번 묶음의 답]
+## What we ask of each other
+- [open items — answers from question group 5 of the kickoff interview]
