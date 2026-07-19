@@ -13,7 +13,7 @@
 3. [다음 마감]
 
 ## 읽는 지도
-- 처음 시작(킥오프): `_system/KICKOFF_INTERVIEW.md`
+- 처음 시작(온보딩·킥오프): `ONBOARDING.md`, `_system/KICKOFF_INTERVIEW.md`
 - 현재 상태: `_system/CURRENT_STATE.md`
 - 확정된 결정: `_system/DECISION_LOG.md`, `02 Decisions/`
 - 팀과 역할: `_system/TEAM.md`
