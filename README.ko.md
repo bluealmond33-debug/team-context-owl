@@ -68,6 +68,14 @@ _system/DECISION_LOG.md → 요청과 직접 관련 있는 근거 문서야.
 결정되지 않은 내용은 추측하지 말고 질문으로 남겨줘.
 ```
 
+## NotebookLM으로 팀 브리핑·Q&A 만들기
+
+Context Hippo는 GitHub에서 NotebookLM으로 자동 동기화한다고 약속하지 않습니다. 대신 현재 결정과 변경만 담은, 사람이 검토 후 업로드하는 **NotebookLM Handoff 패키지**를 만들도록 돕습니다.
+
+- 처음 사용한다면: [`06 Team/NOTEBOOKLM-HANDOFF.md`](06%20Team/NOTEBOOKLM-HANDOFF.md)
+- 바로 만들려면: [`99 Templates/notebooklm-handoff.md`](99%20Templates/notebooklm-handoff.md)를 `07 Outputs/`에 복사
+- Handoff 파일 안에 팀 브리핑·슬라이드 초안·온보딩/Q&A·의사결정 검토용 프롬프트가 함께 있습니다. 별도 프롬프트 목록을 찾을 필요가 없습니다.
+
 ## 원본과 Markdown을 함께 보관하기
 
 PDF·PPT·Word·회의 녹음은 해당 폴더의 `_raw/`에 원본으로 보관합니다. MarkItDown 같은 도구로 추출·정리한 `.md`는 같은 폴더 바로 아래에 둡니다. 정리본 첫 줄에는 원본 경로를 적습니다:
