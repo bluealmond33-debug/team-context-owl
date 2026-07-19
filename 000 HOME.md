@@ -13,9 +13,11 @@
 3. [다음 마감]
 
 ## 읽는 지도
+- 처음 시작(킥오프): `_system/KICKOFF_INTERVIEW.md`
 - 현재 상태: `_system/CURRENT_STATE.md`
 - 확정된 결정: `_system/DECISION_LOG.md`, `02 Decisions/`
 - 팀과 역할: `_system/TEAM.md`
+- 팀 규범: `_system/WORKING_AGREEMENTS.md`
 - 공통 용어: `_system/GLOSSARY.md`
 - 저장소 전체 지도: `00 Project Hub/README.md`
 - 원본/Markdown 처리: `_system/UPLOAD_RULES.md`

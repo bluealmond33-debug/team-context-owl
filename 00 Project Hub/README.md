@@ -7,6 +7,8 @@
 | 현재 목표·막힌 일·다음 행동 | `_system/CURRENT_STATE.md` |
 | 확정된 선택과 이유 | `_system/DECISION_LOG.md`, `02 Decisions/` |
 | 팀 구성·담당 | `_system/TEAM.md`, `06 Team/` |
+| 팀 규범 (회의·소통·의사결정) | `_system/WORKING_AGREEMENTS.md` |
+| 처음 시작할 때 킥오프 절차 | `_system/KICKOFF_INTERVIEW.md` |
 | 아직 분류하지 않은 자료 | `00 Inbox/`, `00 Inbox/INTAKE_INDEX.md` |
 | 회의 근거 | `01 Meetings/` |
 | 리서치와 원본 | `03 Research/` 및 각 폴더의 `_raw/` |
