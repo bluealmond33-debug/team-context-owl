@@ -66,6 +66,14 @@ For anything confirmed, propose updates to the decision log and current state.
 For anything undecided, don't guess — leave it as a question.
 ```
 
+## NotebookLM team briefings and Q&A
+
+Context Hippo does not promise automatic GitHub-to-NotebookLM synchronization. It helps you make a reviewed **NotebookLM Handoff package**: one source with the current decisions and changes, ready for a human to upload.
+
+- First time? Read [`06 Team/NOTEBOOKLM-HANDOFF.md`](06%20Team/NOTEBOOKLM-HANDOFF.md).
+- Make a package: copy [`99 Templates/notebooklm-handoff.md`](99%20Templates/notebooklm-handoff.md) into `07 Outputs/`.
+- The handoff file itself includes four ready-to-copy prompts: team briefing, slide outline, onboarding/Q&A, and decision review. Users discover prompts inside the file they upload, rather than having to find a separate prompt library.
+
 ## Keep originals alongside Markdown
 
 Store PDF/PPT/Word files and meeting recordings as originals in the folder's `_raw/`. Put the `.md` extracted with tools like MarkItDown right next to it in the same folder. The first line of a digest names its origin:
