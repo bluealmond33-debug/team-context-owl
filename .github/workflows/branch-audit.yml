@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  issues: write
 
 jobs:
   audit:
@@ -24,3 +25,15 @@ jobs:
         with:
           name: branch-audit
           path: branch-audit.md
+      - name: Post report to tracking issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          title="Branch audit report"
+          number="$(gh issue list --state open --search "\"$title\" in:title" --json number --jq '.[0].number // empty')"
+          if [ -z "$number" ]; then
+            gh issue create --title "$title" --body-file branch-audit.md
+          else
+            gh issue comment "$number" --body-file branch-audit.md
+          fi

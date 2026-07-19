@@ -2,3 +2,6 @@
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 *.tmp
+
+# 민감 연락처 등 로컬 전용 파일 (_system/KICKOFF_INTERVIEW.md 참고)
+*.local.md
