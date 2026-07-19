@@ -1,18 +1,13 @@
-# CODEOWNERS — the actual enforcement for protected files
+# CODEOWNERS — owners who approve structure/context changes
+# Works together with branch protection's "Require review from Code Owners".
+# (This file alone only auto-requests review; enforcement is switched on in
+#  Settings/rulesets → see _system/GOVERNANCE.md, including the free-plan caveat.)
 #
-# How to use:
-# 1. Replace @integrator-id below with the integrator's (or lead's) GitHub ID.
-# 2. Remove the leading # from each rule line.
-# 3. In GitHub Settings > Branches, create a protection rule for main and
-#    enable "Require review from Code Owners".
-# All three are needed before the protected-file rules in INTEGRATION_RULES.md are enforced.
+# Replace {{OWNER_HANDLE}} with the integrator's or lead's GitHub handle —
+# the kickoff interview offers to do this for you.
+# Multiple owners: `* @alice @bob`. To narrow to the lead alone later, leave one handle.
 #
-# /000\ HOME.md       @integrator-id
-# /AGENTS.md          @integrator-id
-# /CLAUDE.md          @integrator-id
-# /ONBOARDING.md      @integrator-id
-# /TEAM-GUIDE.md      @integrator-id
-# /_system/           @integrator-id
-# /02\ Decisions/     @integrator-id
-# /05\ Tasks/         @integrator-id
-# /.github/           @integrator-id
+# ⚠️ A wrong handle silently disables that owner's required approval — GitHub
+#    ignores unknown owners without failing. Double-check the spelling.
+
+* @{{OWNER_HANDLE}}

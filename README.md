@@ -4,6 +4,8 @@
   <img src="assets/context-hippo-hero.png" alt="Context Hippo mark — a black hippo with its mouth wide open" width="380" />
 </p>
 
+<p align="center"><b>English</b> · <a href="README.ko.md">한국어</a></p>
+
 An Obsidian + GitHub template that takes your team's scattered chats, meetings, links, and documents and **digests them into shared context** that humans and AI read together.
 
 Context Hippo is not a service that processes everything automatically. Instead, it defines where raw material goes, what gets digested into Markdown, and what becomes official decisions and current state. Humans and AI read the same rules and work from the same project context.
@@ -74,7 +76,7 @@ Store PDF/PPT/Word files and meeting recordings as originals in the folder's `_r
 
 ## An important limitation
 
-The documents in this template are an operating baseline. `main` branch protection and required reviews must be enabled separately in the repository Settings on GitHub to become real access control.
+The documents in this template are an operating baseline. `main` branch protection and required reviews must be enabled separately in the repository Settings on GitHub to become real access control. `_system/GOVERNANCE.md` documents the three server-side gates (branch protection, CODEOWNERS, guard CI), the exact commands, and the free-plan fallback (CI signal mode) for private repositories.
 
 ## License
 
