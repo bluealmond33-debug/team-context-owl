@@ -19,7 +19,7 @@
    - GitHub's free plan allows unlimited collaborators on private repositories.
 2. In Settings → Collaborators, invite every member with **Write** access.
 3. Replace the `{{OWNER_HANDLE}}` placeholders with the integrator's GitHub handle in `.github/CODEOWNERS` and `.github/workflows/guard-structure.yml` (the kickoff interview offers to do this for you).
-4. Enable enforcement per `_system/GOVERNANCE.md`: on a public repo (or private + GitHub Pro), turn on `main` branch protection with Code Owners review and the required `guard` check. On a private repo with the free plan, branch protection returns 403 — the checks still run in **CI signal mode** (red ❌ on violations; merging isn't physically blocked).
+4. Choose a governance mode per `_system/GOVERNANCE.md`. The template starts in **single-writer mode** (CI signals, no required review/check gates). Before inviting multiple writers or forking for team use, decide whether to enable `main` branch protection, Code Owners review, and the required `guard` check. On a private repo with the free plan, unavailable protections leave the checks in **CI signal mode** (red ❌ on violations; merging is not physically blocked).
 5. Check the Actions tab to confirm workflows are enabled (weekly Branch audit + the two PR guards).
 
 ## Step 1 — Kickoff interview (lead + AI)

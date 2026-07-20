@@ -4,7 +4,7 @@
   <img src="assets/context-hippo-hero.png" alt="Context Hippo mark — a black hippo with its mouth wide open" width="380" />
 </p>
 
-<p align="center"><b>English</b> · <a href="00%20Project%20Hub/README.ko.md">한국어</a></p>
+<p align="center"><b>English</b> · <a href="README.ko.md">한국어</a></p>
 
 An Obsidian + GitHub template that takes your team's scattered chats, meetings, links, and documents and **digests them into shared context** that humans and AI read together.
 
@@ -80,9 +80,9 @@ Store PDF/PPT/Word files and meeting recordings as originals in the folder's `_r
 > Origin: _raw/interview-notes.pdf
 ```
 
-## An important limitation
+## Governance mode
 
-The documents in this template are an operating baseline. `main` branch protection and required reviews must be enabled separately in the repository Settings on GitHub to become real access control. `_system/GOVERNANCE.md` documents the three server-side gates (branch protection, CODEOWNERS, guard CI), the exact commands, and the free-plan fallback (CI signal mode) for private repositories.
+This template starts in **single-writer mode**: its workflows provide CI signals, while reviews and required checks are not enabled as hard merge gates. Before a fork or a move to a multi-writer team, explicitly decide whether to enable PR requirements, Code Owners review, and required checks. `_system/GOVERNANCE.md` documents both modes and the exact configuration.
 
 ## License
 
