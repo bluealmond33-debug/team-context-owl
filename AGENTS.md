@@ -32,7 +32,7 @@ An item counts as "organized" only when ALL of the following are done. If any is
 - Never invent unverified facts, decisions, or numbers. If unsure, leave it as an open item or question in `_system/CURRENT_STATE.md`.
 - Never delete PDF/PPT/Word/recording originals. Keep originals in `_raw/` and put a readable Markdown digest in the same folder.
 - Log your own work in `04 Worklogs/` before and after working.
-- Member branches touch only evidence, drafts, and outputs. Only the integrator changes `_system/`, `02 Decisions/`, `05 Tasks/`, and the top-level guide files.
+- Member branches touch only evidence, drafts, and outputs. Only the integrator changes `_system/`, `02 Decisions/`, `05 Tasks/`, and the guide files (repo root + `00 Project Hub/`).
 - Anything AI produces — text, code, summaries — ships with its sources and assumptions, left for a human to review.
 
 ## AI prototype work

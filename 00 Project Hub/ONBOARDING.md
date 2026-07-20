@@ -31,7 +31,7 @@
 
 ## Step 2 — Members join (each member)
 
-This doubles as a rehearsal of your first PR. New to Git? Keep `TEAM-GUIDE.md` open beside you.
+This doubles as a rehearsal of your first PR. New to Git? Keep `00 Project Hub/TEAM-GUIDE.md` open beside you.
 
 1. Accept the invite and clone the repository.
 2. Read in order: `000 HOME.md` → `_system/WORKING_AGREEMENTS.md` (draft) → `06 Team/<your-alias>.md`. (10 min)

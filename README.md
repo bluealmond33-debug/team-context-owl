@@ -27,7 +27,7 @@ New teammates and AI start from `000 HOME.md`. Without scanning the whole vault,
 ## Getting started
 
 1. Create your team repository with **Use this template** — and make it **Private**. Contact handles, meeting notes, and unconfirmed ideas accumulate here. This template repository is public, but your team repository should always run private; consider going public only after the project ends and sensitive content has been scrubbed.
-2. Follow `ONBOARDING.md`: the lead prepares the repository (step 0), fills the official docs through the AI **kickoff interview** (`_system/KICKOFF_INTERVIEW.md`, step 1), teammates join via onboarding PRs (step 2), and the first meeting locks in the team agreements (step 3).
+2. Follow `00 Project Hub/ONBOARDING.md`: the lead prepares the repository (step 0), fills the official docs through the AI **kickoff interview** (`_system/KICKOFF_INTERVIEW.md`, step 1), teammates join via onboarding PRs (step 2), and the first meeting locks in the team agreements (step 3).
 3. Open the cloned folder with an AI tool like Claude Code or Codex and the start gate in `AGENTS.md` launches the kickoff interview automatically — it first asks for your team's working language (English, Korean, or any other). Working without AI? Fill in the bracketed placeholders in `000 HOME.md`, `_system/TEAM.md`, and `_system/CURRENT_STATE.md` yourself.
 4. Raw material goes to `00 Inbox/`; each member works on a `member/<name>-<task>` branch.
 5. The lead/integrator reviews PRs, gathers them into `integrate/<scope>-YYYY-MM-DD`, and merges to `main`.
@@ -38,11 +38,9 @@ New teammates and AI start from `000 HOME.md`. Without scanning the whole vault,
 000 HOME.md          # The dashboard everyone — human or AI — starts from
 AGENTS.md            # Shared rules for AI and humans + kickoff start gate
 CLAUDE.md            # Entry point for Claude Code (imports AGENTS.md)
-ONBOARDING.md        # First-two-days flow (repo setup → kickoff → joining → first meeting)
-TEAM-GUIDE.md        # A guide teammates can follow without knowing Git
 _system/             # Current state, decisions, team, glossary, rules — the official baseline
 00 Inbox/            # Unsorted raw material and the intake ledger
-00 Project Hub/      # Map of the whole repository
+00 Project Hub/      # Repository map + ONBOARDING.md and TEAM-GUIDE.md
 01 Meetings/         # Meeting notes
 02 Decisions/        # Confirmed ADRs/decisions
 03 Research/         # Research and Markdown digests of PDF/PPT/Word files

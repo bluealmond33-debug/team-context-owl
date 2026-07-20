@@ -20,7 +20,7 @@ When a new team adopts this template, the AI interviews the team lead for team m
 6. When the interview ends, update the documents per **Where answers go**, show the lead the list of changed files, and offer to commit.
 7. Finally, update the `Status:` line of this file.
 8. **Governance placeholders**: if `{{OWNER_HANDLE}}` remains in `.github/CODEOWNERS` or `.github/workflows/guard-structure.yml`, offer to replace it with the lead's/integrator's GitHub handles collected in group 2. Until replaced, CODEOWNERS is inert and guard-structure passes neutrally with a warning (see `_system/GOVERNANCE.md`).
-9. This interview is step 1 of `ONBOARDING.md`. On completion, point the lead to the next steps — inviting members (if step 0 was skipped) and member onboarding PRs (step 2).
+9. This interview is step 1 of `00 Project Hub/ONBOARDING.md`. On completion, point the lead to the next steps — inviting members (if step 0 was skipped) and member onboarding PRs (step 2).
 
 ## Question groups
 
@@ -45,7 +45,7 @@ When a new team adopts this template, the AI interviews the team lead for team m
 - What they're good at (e.g., presenting, design, data analysis, writing, code)
 - The role they want, and what they want to learn from this project
 - Weekly hours available and hard-blocked time slots (including schedule risks like exam periods)
-- Git/GitHub familiarity (identifies who needs `TEAM-GUIDE.md`)
+- Git/GitHub familiarity (identifies who needs `00 Project Hub/TEAM-GUIDE.md`)
 
 ### 5) Team norms — what we ask of each other
 - Meetings: cadence, day/time, rules for lateness and absence

@@ -13,7 +13,7 @@
 3. [next deadline]
 
 ## Reading map
-- Getting started (onboarding & kickoff): `ONBOARDING.md`, `_system/KICKOFF_INTERVIEW.md`
+- Getting started (onboarding & kickoff): `00 Project Hub/ONBOARDING.md`, `_system/KICKOFF_INTERVIEW.md`
 - Current state: `_system/CURRENT_STATE.md`
 - Confirmed decisions: `_system/DECISION_LOG.md`, `02 Decisions/`
 - Team and roles: `_system/TEAM.md`
