@@ -7,7 +7,7 @@
 | `main` | official baseline | receive reviewed PRs | direct work / direct pushes |
 
 ## Protected files
-`000 HOME.md`, `README.md`, `README.ko.md`, `AGENTS.md`, `CLAUDE.md`, `00 Project Hub/**` (repo map + onboarding/team guides), `_system/**`, `02 Decisions/**`, `05 Tasks/**`, `.github/**`, `scripts/**`, and each folder's `README.md` are changed only by the integrator.
+`README.md`, `AGENTS.md`, `CLAUDE.md`, `Project Hub/**` (dashboard, Korean guide, repo map + onboarding/team guides), `_system/**`, `02 Decisions/**`, `05 Tasks/**`, `.github/**`, `scripts/**`, and each folder's `README.md` are changed only by the integrator.
 
 Enforcement: `scripts/verify-protected-paths.sh` implements this list and runs as the `protected-paths` CI on every main PR; who may land on `main` at all is checked by the `guard-structure` CI. The three server-side gates and the free-plan fallback are documented in [GOVERNANCE.md](GOVERNANCE.md).
 

@@ -1,6 +1,6 @@
 # TEAM GUIDE — Using this without knowing Git
 
-> Just joined? Follow **step 2 — Members join** in `00 Project Hub/ONBOARDING.md`. This document is the everyday manual you keep using afterwards.
+> Just joined? Follow **step 2 — Members join** in `Project Hub/ONBOARDING.md`. This document is the everyday manual you keep using afterwards.
 
 ## Adding material
 - Anything unsorted — links, photos, PDFs, PPTs, meeting transcripts — goes into `00 Inbox/`.
@@ -13,7 +13,7 @@
 4. Open a PR and request review from the integrator.
 
 ## Files you must not edit directly
-`000 HOME.md`, `AGENTS.md`, `CLAUDE.md`, `ONBOARDING.md`, `TEAM-GUIDE.md`, `_system/`, `02 Decisions/`, `05 Tasks/` are the team's official baseline. If a change is needed, explain why in a PR and request integration.
+`HOME.md`, `AGENTS.md`, `CLAUDE.md`, `ONBOARDING.md`, `TEAM-GUIDE.md`, `_system/`, `02 Decisions/`, `05 Tasks/` are the team's official baseline. If a change is needed, explain why in a PR and request integration.
 
 ## What you can ask the AI
 - "What has been done so far?" → answers from `CURRENT_STATE`, recent meeting notes, and worklogs.

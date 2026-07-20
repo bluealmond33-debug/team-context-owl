@@ -4,7 +4,7 @@
   <img src="assets/context-hippo-hero.png" alt="Context Hippo mark — a black hippo with its mouth wide open" width="380" />
 </p>
 
-<p align="center"><b>English</b> · <a href="README.ko.md">한국어</a></p>
+<p align="center"><b>English</b> · <a href="00%20Project%20Hub/README.ko.md">한국어</a></p>
 
 An Obsidian + GitHub template that takes your team's scattered chats, meetings, links, and documents and **digests them into shared context** that humans and AI read together.
 
@@ -22,25 +22,25 @@ A human or AI organizes the original into a Markdown note and files it under mee
 Confirmed choices go to `02 Decisions/` and `_system/DECISION_LOG.md`; work in progress and blockers go to `_system/CURRENT_STATE.md`. These files are the team's official baseline.
 
 ### 4. Reuse — the next person or AI picks up instantly
-New teammates and AI start from `000 HOME.md`. Without scanning the whole vault, they get the current goal, decisions, rules, and next actions, then read only the evidence they need.
+New teammates and AI start from `Project Hub/HOME.md`. Without scanning the whole vault, they get the current goal, decisions, rules, and next actions, then read only the evidence they need.
 
 ## Getting started
 
 1. Create your team repository with **Use this template** — and make it **Private**. Contact handles, meeting notes, and unconfirmed ideas accumulate here. This template repository is public, but your team repository should always run private; consider going public only after the project ends and sensitive content has been scrubbed.
-2. Follow `00 Project Hub/ONBOARDING.md`: the lead prepares the repository (step 0), fills the official docs through the AI **kickoff interview** (`_system/KICKOFF_INTERVIEW.md`, step 1), teammates join via onboarding PRs (step 2), and the first meeting locks in the team agreements (step 3).
-3. Open the cloned folder with an AI tool like Claude Code or Codex and the start gate in `AGENTS.md` launches the kickoff interview automatically — it first asks for your team's working language (English, Korean, or any other). Working without AI? Fill in the bracketed placeholders in `000 HOME.md`, `_system/TEAM.md`, and `_system/CURRENT_STATE.md` yourself.
+2. Follow `Project Hub/ONBOARDING.md`: the lead prepares the repository (step 0), fills the official docs through the AI **kickoff interview** (`_system/KICKOFF_INTERVIEW.md`, step 1), teammates join via onboarding PRs (step 2), and the first meeting locks in the team agreements (step 3).
+3. Open the cloned folder with an AI tool like Claude Code or Codex and the start gate in `AGENTS.md` launches the kickoff interview automatically — it first asks for your team's working language (English, Korean, or any other). Working without AI? Fill in the bracketed placeholders in `Project Hub/HOME.md`, `_system/TEAM.md`, and `_system/CURRENT_STATE.md` yourself.
 4. Raw material goes to `00 Inbox/`; each member works on a `member/<name>-<task>` branch.
 5. The lead/integrator reviews PRs, gathers them into `integrate/<scope>-YYYY-MM-DD`, and merges to `main`.
 
 ## Structure
 
 ```text
-000 HOME.md          # The dashboard everyone — human or AI — starts from
+Project Hub/HOME.md # The dashboard everyone — human or AI — starts from
 AGENTS.md            # Shared rules for AI and humans + kickoff start gate
 CLAUDE.md            # Entry point for Claude Code (imports AGENTS.md)
 _system/             # Current state, decisions, team, glossary, rules — the official baseline
 00 Inbox/            # Unsorted raw material and the intake ledger
-00 Project Hub/      # Repository map + ONBOARDING.md and TEAM-GUIDE.md
+Project Hub/      # Repository map + ONBOARDING.md and TEAM-GUIDE.md
 01 Meetings/         # Meeting notes
 02 Decisions/        # Confirmed ADRs/decisions
 03 Research/         # Research and Markdown digests of PDF/PPT/Word files
@@ -56,7 +56,7 @@ _system/             # Current state, decisions, team, glossary, rules — the o
 
 ```text
 Read this repository and pick up the current project context.
-Reading order: 000 HOME.md → AGENTS.md → _system/CURRENT_STATE.md →
+Reading order: Project Hub/HOME.md → AGENTS.md → _system/CURRENT_STATE.md →
 _system/DECISION_LOG.md → the evidence documents relevant to my request.
 
 For new material, keep the original and digest it into Markdown.
