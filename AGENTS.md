@@ -13,10 +13,10 @@ The template ships in English. The kickoff interview asks for the team's working
 4. Documents in the folders directly relevant to the request
 
 ## Context management — humans upload, AI organizes
-- **Humans only upload into `00 Inbox/`.** The numbered folders (01–07), `_system/`, and the folder structure are created and organized **by AI/automation under owner approval**. This keeps the context curated to one consistent standard.
+- **Humans only upload into `00 Inbox/`.** The numbered folders (01–07), `_system/`, and the folder structure are created and organized **by AI/automation under owner oversight**. This keeps the context curated to one consistent standard.
 - Non-owners never modify the base folder structure. The protected-file list lives in `_system/INTEGRATION_RULES.md`; who counts as an owner is defined in `_system/GOVERNANCE.md` (template placeholder: `{{OWNER_HANDLE}}`).
 - **AI confirms with the branch's human before pushing.** Especially after digesting new Inbox material: ask "I organized it — push?" and only then push.
-- Enforcement = `protected-paths` CI (which files are protected) + `guard-structure` CI (who may land on main) + branch protection. *"Was it AI or a human" cannot be told apart technically — enforcement works by path + approval + PR author instead.* Details: `_system/GOVERNANCE.md`.
+- The default is **single-writer mode**: `protected-paths` CI and `guard-structure` CI provide signals, not required merge gates. Before a fork or multi-writer transition, explicitly choose whether to enable branch protection, Code Owners review, and required checks. *"Was it AI or a human" cannot be told apart technically — enforcement works by path + authenticated PR author and, in team mode, approval instead.* Details: `_system/GOVERNANCE.md`.
 
 ## Inbox processing — all four steps, one commit
 An item counts as "organized" only when ALL of the following are done. If any is missing, it is not organized:

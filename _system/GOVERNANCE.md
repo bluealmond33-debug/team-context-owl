@@ -5,24 +5,30 @@
 > Sister document: [INTEGRATION_RULES.md](INTEGRATION_RULES.md) — the protected-file list and the integration-branch (`integrate/*`) procedure.
 > **Role split:** INTEGRATION_RULES + the `protected-paths` CI answer *which files* are protected (branch-based; `integrate/*` passes). This document + the `guard-structure` CI answer *who* — owner vs non-owner — may land what on `main` (author-based; owners pass). Integration-branch PRs are opened by an owner, so they pass both checks.
 
+## Operating mode — choose deliberately
+
+The template starts in **single-writer mode**: PRs and CI are used for traceability and verification, but GitHub reviews and required status checks are not configured as hard merge gates. This is intentional: a sole owner cannot approve their own PR.
+
+Before a fork or a transition to multiple writers, the owner must explicitly choose **team mode**. Team mode enables branch protection, Code Owners review, and required CI as described below. Do not describe those controls as active until they are actually configured in GitHub Settings.
+
 ## First, the technical limits (know them precisely)
 
 - **"Did AI or a human make this commit" cannot be distinguished.** Git's author/committer fields and `Co-Authored-By` trailers are plain text anyone can set — forgeable. "Detect and block human commits" is impossible in principle.
-- So enforcement works **not by "who typed it" but by path + approval + PR author**. The PR author is GitHub-authenticated and cannot be forged.
+- So enforcement works **not by "who typed it" but by path + authenticated PR author and, in team mode, approval**. The PR author is GitHub-authenticated and cannot be forged.
 - **Client-side hooks (pre-commit/pre-push) are not walls** — they don't come along with a clone and are bypassed with `--no-verify`. They can help; they cannot enforce. Real enforcement is server-side on GitHub only.
 
 ## Enforcement scope
 
 - **Personal branches (`member/*`) = free.** This is where AI works and where humans upload into `00 Inbox` freely.
-- **`main` = locked (the canonical context).** Only material organized and verified on personal branches enters, through an owner-approved PR.
+- **`main` = canonical context.** Only material organized and verified on personal branches enters through the agreed integration flow. In team mode, this is an owner-approved PR.
 
-## The three gates (all server-side = not bypassable)
+## The three team-mode gates (server-side once enabled)
 
 1. **Branch protection on `main`** — no direct pushes, PR required, ≥1 approval, "Require review from Code Owners" ON, and the `guard` check marked **required**.
 2. **CODEOWNERS** (`.github/CODEOWNERS`) — every path owned by the owner(s), so no main PR merges without owner approval. Replace `{{OWNER_HANDLE}}` with the real handle(s); a wrong handle silently disables the gate.
 3. **guard-structure Action** (`.github/workflows/guard-structure.yml`) — if a main PR's author is not in the OWNERS list and the PR touches anything outside `00 Inbox/`, the check **fails automatically**. It only becomes a wall once marked "required" in branch protection.
 
-## What the owner enables once (Settings or gh)
+## What the owner enables for team mode (Settings or gh)
 
 > **Plan caveat (measured in practice):** on the **free plan, branch protection on a *private* repository returns 403** ("Upgrade to GitHub Pro or make this repository public"). Your options:
 >
@@ -43,14 +49,14 @@ gh api -X PUT "repos/{{OWNER_HANDLE}}/{{REPO}}/branches/main/protection" \
 # (Confirm the check's context name in the Checks tab after the Action has run once — usually "guard".)
 ```
 
-> ⚠️ **You cannot approve your own PR.** With a single owner, that owner's PRs would be stuck. Either keep two owners who approve each other, or leave `enforce_admins=false` so an admin can bypass when needed.
+> ⚠️ **You cannot approve your own PR.** With a single owner, keep the default single-writer mode and self-verify PR scope and CI before merging. For team mode, use at least two owners who can approve each other; `enforce_admins=false` is an emergency bypass, not a routine workflow.
 
 ## The daily flow (what AI must follow — also stated in AGENTS.md)
 
 1. A human uploads originals into `00 Inbox` on a personal branch.
 2. AI runs the four Inbox steps (AGENTS.md → "Inbox processing"): digest into 01–07, move the original to the destination `_raw/`, point the origin link at the final location, empty the Inbox — all in one commit.
 3. **AI confirms with the branch's human before pushing.**
-4. `main` changes land only via owner-approved PRs. Structure and context changes are filtered here.
+4. In single-writer mode, the owner verifies PR scope and CI before merging. In team mode, `main` changes land only via owner-approved PRs. Structure and context changes are filtered here.
 
 ## Reverting
 

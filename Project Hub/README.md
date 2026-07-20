@@ -1,5 +1,7 @@
 # Project Hub — Map of the repository
 
+<p><b>English</b> · <a href="README.ko.md">한국어</a></p>
+
 > `HOME.md` tells you **what to do right now**; this file tells you **where things live**.
 > This folder also holds the two human guides: `ONBOARDING.md` (getting started) and `TEAM-GUIDE.md` (everyday use without Git knowledge).
 
