@@ -25,16 +25,16 @@
 ## Step 1 — Kickoff interview (lead + AI)
 
 1. Clone the repository and open it with an AI tool like Claude Code or Codex.
-2. The start gate in `AGENTS.md` launches the kickoff interview. It first asks for the team's working language, then walks through team makeup, contacts, strengths, team norms, and goals, and fills `_system/TEAM.md`, `_system/WORKING_AGREEMENTS.md`, `000 HOME.md`, `_system/CURRENT_STATE.md`, and `06 Team/*`.
+2. The start gate in `AGENTS.md` launches the kickoff interview. It first asks for the team's working language, then walks through team makeup, contacts, strengths, team norms, and goals, and fills `_system/TEAM.md`, `_system/WORKING_AGREEMENTS.md`, `HOME.md`, `_system/CURRENT_STATE.md`, and `06 Team/*`.
 3. Without AI, walk through the question groups in `_system/KICKOFF_INTERVIEW.md` and fill the same files yourself.
 4. Commit and push the result. Team norms and member profiles are **drafts** at this point — they get confirmed in step 3.
 
 ## Step 2 — Members join (each member)
 
-This doubles as a rehearsal of your first PR. New to Git? Keep `00 Project Hub/TEAM-GUIDE.md` open beside you.
+This doubles as a rehearsal of your first PR. New to Git? Keep `Project Hub/TEAM-GUIDE.md` open beside you.
 
 1. Accept the invite and clone the repository.
-2. Read in order: `000 HOME.md` → `_system/WORKING_AGREEMENTS.md` (draft) → `06 Team/<your-alias>.md`. (10 min)
+2. Read in order: `HOME.md` → `_system/WORKING_AGREEMENTS.md` (draft) → `06 Team/<your-alias>.md`. (10 min)
 3. Create a `member/<name>-onboarding` branch.
 4. Review and improve your own profile (`06 Team/<your-alias>.md`) that the lead drafted — strengths, availability, what you want to learn.
 5. Add one line to `04 Worklogs/YYYY-MM-DD-<alias>.md`: that you finished onboarding, plus one line of feedback on the norms draft if you have any.

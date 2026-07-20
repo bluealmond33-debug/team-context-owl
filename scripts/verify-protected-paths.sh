@@ -24,7 +24,7 @@ fi
 
 is_protected() {
   case "$1" in
-    '000 HOME.md'|README.md|README.ko.md|AGENTS.md|CLAUDE.md|00\ Project\ Hub/*|_system/*|02\ Decisions/*|05\ Tasks/*|.github/*|scripts/*)
+    README.md|AGENTS.md|CLAUDE.md|Project\ Hub/*|_system/*|02\ Decisions/*|05\ Tasks/*|.github/*|scripts/*)
       return 0 ;;
     00\ Inbox/README.md|01\ Meetings/README.md|02\ Decisions/README.md|03\ Research/README.md|04\ Worklogs/README.md|05\ Tasks/README.md|06\ Team/README.md|07\ Outputs/README.md|90\ Archive/README.md)
       return 0 ;;

@@ -7,7 +7,7 @@ If the `Status:` line at the top of `_system/KICKOFF_INTERVIEW.md` says `pending
 The template ships in English. The kickoff interview asks for the team's working language and records it in `_system/KICKOFF_INTERVIEW.md`. Hold all conversation and write all generated notes and summaries in that language; keep file names, folder structure, and status keywords (`pending` / `done`) in English.
 
 ## Read these first
-1. `000 HOME.md`
+1. `Project Hub/HOME.md`
 2. `_system/CURRENT_STATE.md`
 3. `_system/DECISION_LOG.md`
 4. Documents in the folders directly relevant to the request
@@ -32,7 +32,7 @@ An item counts as "organized" only when ALL of the following are done. If any is
 - Never invent unverified facts, decisions, or numbers. If unsure, leave it as an open item or question in `_system/CURRENT_STATE.md`.
 - Never delete PDF/PPT/Word/recording originals. Keep originals in `_raw/` and put a readable Markdown digest in the same folder.
 - Log your own work in `04 Worklogs/` before and after working.
-- Member branches touch only evidence, drafts, and outputs. Only the integrator changes `_system/`, `02 Decisions/`, `05 Tasks/`, and the guide files (repo root + `00 Project Hub/`).
+- Member branches touch only evidence, drafts, and outputs. Only the integrator changes `_system/`, `02 Decisions/`, `05 Tasks/`, and the guide files (repo root + `Project Hub/`).
 - Anything AI produces — text, code, summaries — ships with its sources and assumptions, left for a human to review.
 
 ## AI prototype work
