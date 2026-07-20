@@ -1,6 +1,7 @@
 # 00 Project Hub — Map of the repository
 
 > `000 HOME.md` tells you **what to do right now**; this file tells you **where things live**.
+> This folder also holds the two human guides: `ONBOARDING.md` (getting started) and `TEAM-GUIDE.md` (everyday use without Git knowledge).
 
 | Looking for | Location |
 |---|---|
@@ -9,7 +10,8 @@
 | Team makeup and ownership | `_system/TEAM.md`, `06 Team/` |
 | Team norms (meetings, comms, decisions) | `_system/WORKING_AGREEMENTS.md` |
 | Who may change what / enforcement | `_system/GOVERNANCE.md` |
-| Getting-started onboarding & kickoff | `ONBOARDING.md`, `_system/KICKOFF_INTERVIEW.md` |
+| Getting-started onboarding & kickoff | `00 Project Hub/ONBOARDING.md`, `_system/KICKOFF_INTERVIEW.md` |
+| Git-free guide for members | `00 Project Hub/TEAM-GUIDE.md` |
 | Unsorted material | `00 Inbox/`, `00 Inbox/INTAKE_INDEX.md` |
 | Meeting evidence | `01 Meetings/` |
 | Research and originals | `03 Research/` and each folder's `_raw/` |

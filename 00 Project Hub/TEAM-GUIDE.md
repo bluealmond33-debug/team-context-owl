@@ -1,6 +1,6 @@
 # TEAM GUIDE — Using this without knowing Git
 
-> Just joined? Follow **step 2 — Members join** in `ONBOARDING.md`. This document is the everyday manual you keep using afterwards.
+> Just joined? Follow **step 2 — Members join** in `00 Project Hub/ONBOARDING.md`. This document is the everyday manual you keep using afterwards.
 
 ## Adding material
 - Anything unsorted — links, photos, PDFs, PPTs, meeting transcripts — goes into `00 Inbox/`.
